@@ -1,0 +1,15 @@
+environment         = "prod"
+location            = "eastus"
+workload_name       = "health-ehr"
+vnet_address_space  = ["10.210.0.0/16"]
+postgres_sku_name   = "GP_Standard_D4ds_v5"
+postgres_storage_mb = 131072
+
+tags = {
+  Industry           = "Healthcare"
+  Compliance         = "HIPAA-HITRUST-SOC2"
+  DataClassification = "PHI-Confidential"
+  Environment        = "Production"
+  ManagedBy          = "Terraform"
+  CostCenter         = "Healthcare-Core-Data"
+}
